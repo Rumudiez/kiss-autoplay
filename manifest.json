@@ -1,0 +1,22 @@
+{
+  "name": "Kiss Autoplay",
+  "description": "Automatically play the next episode on Kiss Cartoon and Kiss Anime",
+  "version": "0.1.2",
+  "permissions": [
+    "activeTab"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "http://kisscartoon.me/*",
+        "http://kisscartoon.se/*",
+        "http://kissanime.to/*",
+        "http://kissanime.io/*",
+        "http://kissanime.ru/*"
+      ],
+      "css": [],
+      "js": ["autoplay.js"]
+    }
+  ],
+  "manifest_version": 2
+}
